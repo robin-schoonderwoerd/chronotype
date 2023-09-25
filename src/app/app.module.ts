@@ -5,6 +5,7 @@ import { AppComponent } from './app.component';
 import { ResultComponent } from './components/result/result.component';
 import { InputComponent } from './components/input/input.component';
 import { MainBoxComponent } from './components/main-box/main-box.component';
+import {NgbModule} from '@ng-bootstrap/ng-bootstrap'; 
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { MainBoxComponent } from './components/main-box/main-box.component';
     MainBoxComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    NgbModule
   ],
   providers: [],
   bootstrap: [AppComponent]
