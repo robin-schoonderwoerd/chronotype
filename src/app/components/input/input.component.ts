@@ -6,8 +6,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./input.component.css']
 })
 export class InputComponent {
-  time = {
-    "hour": 1,
-    "minute": 30,
-    }
+  time = {hour: 14, minute: 30};
+  time2 = {hour: 15, minute: 30};
+  midsleep = {hour: 1, minute: 1}
+
+
+  
 }
