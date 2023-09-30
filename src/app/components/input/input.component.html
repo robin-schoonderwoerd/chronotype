@@ -1,6 +1,7 @@
 <p>Select your bedtime on vacation days:</p>
-<ngb-timepicker [(ngModel)]="time"></ngb-timepicker>
+<ngb-timepicker [(ngModel)]="time_sleep_vac" [minuteStep]="15" [size]="'small'" (change)="update()"></ngb-timepicker>
 <p>Select your wake-up time on vacation days:</p>
-<ngb-timepicker [(ngModel)]="time2"></ngb-timepicker>
+<ngb-timepicker [(ngModel)]="time_wake_vac" [minuteStep]="15" [size]="'small'" (change)="update()"></ngb-timepicker>
 <hr/>
-{{midsleep.hour}}:{{midsleep.minute}}
+{{update()}}
+{{midsleephour}}
