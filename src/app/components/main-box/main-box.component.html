@@ -1,5 +1,23 @@
-<div class="div container">
-    <app-result></app-result>
-    <app-input></app-input>
-    <p>End of main-box</p>
+<div class="container">
+    <!-- Output -->
+    <div class="output">
+        {{update()}}
+        <img src="assets/morning.png" *ngIf="chronotype=='morning'">
+        <img src="assets/afternoon.png" *ngIf="chronotype=='afternoon'">
+        <img src="assets/evening.png" *ngIf="chronotype=='evening'">
+        <img src="assets/night.png" *ngIf="chronotype=='night'">
+
+        <div class="div outcome">
+            <div class="div chronotype">{{chronotype}}</div>
+            <div class="div midsleephour">{{midsleephour | number:'1.0-1'}}</div>
+        </div>
+    </div>
+
+    <!-- Input -->
+    <div class="input">
+        <p>Select your bedtime on vacation days:</p>
+        <ngb-timepicker [(ngModel)]="time_sleep_vac" [minuteStep]="15" [size]="'small'" (change)="update()"></ngb-timepicker>
+        <p>Select your wake-up time on vacation days:</p>
+        <ngb-timepicker [(ngModel)]="time_wake_vac" [minuteStep]="15" [size]="'small'" (change)="update()"></ngb-timepicker>
+    </div>
 </div>
