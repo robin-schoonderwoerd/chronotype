@@ -7,6 +7,7 @@ import { InputComponent } from './components/input/input.component';
 import { MainBoxComponent } from './components/main-box/main-box.component';
 import {NgbModule} from '@ng-bootstrap/ng-bootstrap'; 
 import { FormsModule } from '@angular/forms';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -17,6 +18,7 @@ import { FormsModule } from '@angular/forms';
   ],
   imports: [
     BrowserModule,
+    BrowserAnimationsModule,
     NgbModule,
     FormsModule
   ],

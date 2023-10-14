@@ -2,10 +2,10 @@
     <!-- Output -->
     <div class="output">
         {{update()}}
-        <img src="assets/morning.png" *ngIf="chronotype=='morning'">
-        <img src="assets/afternoon.png" *ngIf="chronotype=='afternoon'">
-        <img src="assets/evening.png" *ngIf="chronotype=='evening'">
-        <img src="assets/night.png" *ngIf="chronotype=='night'">
+        <img src="assets/morning.png" *ngIf="chronotype=='morning'" [@inOutAnimation]>
+        <img src="assets/afternoon.png" *ngIf="chronotype=='afternoon'" [@inOutAnimation]>
+        <img src="assets/evening.png" *ngIf="chronotype=='evening'" [@inOutAnimation]>
+        <img src="assets/night.png" *ngIf="chronotype=='night'" [@inOutAnimation]>
 
         <div class="div outcome">
             <div class="div chronotype">{{chronotype}}</div>
