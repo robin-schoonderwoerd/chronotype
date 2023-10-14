@@ -57,6 +57,7 @@
 
 .input {
     position: relative;
+    font-size: 1em;
     z-index: 1;
     width: 100%;
     height: 50%;
@@ -65,3 +66,24 @@
     align-items: center;
     justify-content: center;
 }
+
+:host /deep/ ngb-timepicker input {
+    height: 5px;
+ }
+
+ :host /deep/ ngb-timepicker button {
+    width: 64px;
+    height: 30px;
+ }
+
+ :host /deep/ ngb-timepicker button:hover {
+    background-color: #eeeeee;
+ }
+
+ /* :host /deep/ ngb-timepicker .chevron.ngb-tp-chevron {
+    background-color: aqua;
+ }
+
+ :host /deep/ ngb-timepicker .chevron.ngb-tp-chevron:hover {
+    background-color: black;
+ } */

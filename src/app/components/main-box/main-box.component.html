@@ -15,9 +15,9 @@
 
     <!-- Input -->
     <div class="input">
-        <p>Select your bedtime on vacation days:</p>
+        <p>Select your <strong>bedtime</strong> on vacation days:</p>
         <ngb-timepicker [(ngModel)]="time_sleep_vac" [minuteStep]="15" [size]="'small'" (change)="update()"></ngb-timepicker>
-        <p>Select your wake-up time on vacation days:</p>
+        <p>Select your <strong>wake time</strong> on vacation days:</p>
         <ngb-timepicker [(ngModel)]="time_wake_vac" [minuteStep]="15" [size]="'small'" (change)="update()"></ngb-timepicker>
     </div>
 </div>
