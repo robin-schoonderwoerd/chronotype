@@ -67,6 +67,10 @@
     justify-content: center;
 }
 
+.input p {
+    margin: 0%;
+ }
+
 :host /deep/ ngb-timepicker input {
     height: 5px;
  }
@@ -80,10 +84,10 @@
     background-color: #eeeeee;
  }
 
- /* :host /deep/ ngb-timepicker .chevron.ngb-tp-chevron {
-    background-color: aqua;
+ :host /deep/ ngb-timepicker .chevron.ngb-tp-chevron {
+    color: grey;
  }
 
- :host /deep/ ngb-timepicker .chevron.ngb-tp-chevron:hover {
-    background-color: black;
- } */
+ :host /deep/ ngb-timepicker button:hover .chevron.ngb-tp-chevron {
+    color: black;
+ }
