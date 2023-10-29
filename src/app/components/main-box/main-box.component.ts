@@ -13,7 +13,7 @@ import { trigger, state, style, animate, transition } from '@angular/animations'
           ':enter', 
           [
             style({opacity: 0 }),
-            animate('3s ease-out', 
+            animate('2s ease-out', 
                     style({ opacity: 1 }))
           ]
         ),
@@ -21,7 +21,7 @@ import { trigger, state, style, animate, transition } from '@angular/animations'
           ':leave', 
           [
             style({ opacity: 1 }),
-            animate('3s ease-in', 
+            animate('2s ease-in', 
                     style({opacity: 0 }))
           ]
         )
@@ -31,6 +31,11 @@ import { trigger, state, style, animate, transition } from '@angular/animations'
 })
 export class MainBoxComponent {
 
+  checkVowel(chronostring: string) {
+    const vowels = ['a', 'e', 'i', 'o', 'u'];
+    return vowels.some(vowel => chronostring.startsWith(vowel)) ? 'an' : 'a'
+  }
+  
 
   // Input
   time_sleep_vac = {hour: 23, minute: 30};
