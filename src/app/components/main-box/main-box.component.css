@@ -66,13 +66,18 @@
  }
 
 :host /deep/ ngb-timepicker input {
-    height: 5px;
+    height: 60px;
+    font-size: large;
+    
  }
 
  :host /deep/ ngb-timepicker button {
     width: 64px;
-    height: 30px;
+    height: 60px;
     touch-action: manipulation;
+    /* background-color: #eeeeee; */
+    box-shadow: 3px 3px 3px #aaa;
+    margin: 10px;
  }
 
  :host /deep/ ngb-timepicker button:hover {

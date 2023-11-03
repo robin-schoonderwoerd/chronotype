@@ -15,10 +15,27 @@
 
     <!-- Input -->
     <div class="input">
-        <p>Select your <strong>bedtime</strong> on vacation days:</p>
-        <ngb-timepicker [(ngModel)]="time_sleep_vac" [minuteStep]="15" [size]="'small'" (change)="update()"></ngb-timepicker>
-        <div style="height: 20px;"></div>
-        <p>Select your <strong>wake time</strong> on vacation days:</p>
-        <ngb-timepicker [(ngModel)]="time_wake_vac" [minuteStep]="15" [size]="'small'" (change)="update()"></ngb-timepicker>
+        <div class="row">
+            <div class="col-1"></div>
+            <div class="col-5" style="text-align: center;">
+                <p>Select your <strong>bedtime</strong> on vacation days:</p>
+            </div>
+            
+            <div class="col-5" style="text-align: center;">
+                <p>Select your <strong>wake&nbsp;time</strong> on vacation days:</p>
+            </div>
+        </div>
+        <div class="row">
+
+            <div class="col-6" style="text-align: center;">
+                <ngb-timepicker [(ngModel)]="time_sleep_vac" [minuteStep]="15" [size]="'small'" (change)="update()"></ngb-timepicker>
+            </div>
+            
+            <div class="col-6" style="text-align: center;">
+                <ngb-timepicker [(ngModel)]="time_wake_vac" [minuteStep]="15" [size]="'small'" (change)="update()"></ngb-timepicker>
+            </div>
+
+
+        </div>
     </div>
 </div>
