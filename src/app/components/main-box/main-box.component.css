@@ -94,7 +94,9 @@
  }
 
  :host /deep/ ngb-timepicker button:hover {
-    background-color: #eeeeee;
+    @media (hover:hover) {
+        background-color: #eeeeeedd;
+    }
  }
 
  :host /deep/ ngb-timepicker .chevron.ngb-tp-chevron {
@@ -102,7 +104,9 @@
  }
 
  :host /deep/ ngb-timepicker button:hover .chevron.ngb-tp-chevron {
-    color: black;
+    @media (hover:hover) {
+        color: black;
+    }
  }
 
 
@@ -116,10 +120,14 @@
     .container {
         width: 400px;
         height: 618px;
-        background-color: var(--white2);
+        /* background-color: var(--white2); */
         border-radius: 20px;
-        box-shadow: 10px 10px 10px grey;
+        /* box-shadow: 10px 10px 10px grey; */
         padding: 0%;
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(30px);
+        -webkit-backdrop-filter: blur(30px);
+        border: 1px solid rgba(255, 255, 255, 0.3);
     }
 
     .output {
