@@ -93,8 +93,8 @@
     border: 1px solid rgba(255, 255, 255, 0.3);
  }
 
- :host /deep/ ngb-timepicker button:hover {
-    @media (hover:hover) {
+ @media (hover:hover) {
+    :host /deep/ ngb-timepicker button:hover {
         background-color: #eeeeeedd;
     }
  }
@@ -103,8 +103,8 @@
     color: grey;
  }
 
- :host /deep/ ngb-timepicker button:hover .chevron.ngb-tp-chevron {
-    @media (hover:hover) {
+ @media (hover:hover) {
+    :host /deep/ ngb-timepicker button:hover .chevron.ngb-tp-chevron {
         color: black;
     }
  }
